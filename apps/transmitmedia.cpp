@@ -240,7 +240,7 @@ bool SrtCommon::AcceptNewClient()
         m_bindsock = SRT_INVALID_SOCK;
         Error("srt_accept");
     }
-
+    std::cout << "New accept " << inet_ntoa(scl.sin.sin_addr) << std::endl;
     // we do one client connection at a time,
     // so close the listener.
     srt_close(m_bindsock);

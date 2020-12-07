@@ -651,10 +651,6 @@ int main(int argc, char** argv)
                     {
                         continue;
                     }
-                    else if (derivative && derivative->GetSRTSocket() != s)
-                    {
-                        continue;
-                    }
 
                     const char * dirstring = (issource) ? "source" : "target";
 
